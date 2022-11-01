@@ -70,11 +70,11 @@ export const ProductDetails = () => {
               <hr />
               <p id="precio_producto">${product.precio}</p>
               <div className="stockCounter d-inline">
-                <span className="btn btn-danger minus" onClick={decreaseQty}>-</span>
+                <span className="btn btn-success" onClick={decreaseQty}>-</span>
                 <input type="number" className="form-control count d-inline" value={quantity} readOnly/>
-                <span className="btn btn-primary plus" onClick={increaseQty}>+</span>
+                <span className="btn btn-info" onClick={increaseQty}>+</span>
               </div>
-              <button type="button" id="carrito_btn" className="btn btn-primary d-inline ml-4" disabled={product.inventario===0}>Agregar al Carrito</button>
+              <button type="button" id="carrito_btn" className="btn btn-success d-inline ml-4" disabled={product.inventario===0}>Agregar al Carrito</button>
               <hr />
               <p>Estado: <span id="stock_stado" className={product.inventario>0 ? 'greenColor':'redColor'}>{product.inventario>0 ? "En existencia": "Agotado"}</span></p>
               <hr />
@@ -82,9 +82,9 @@ export const ProductDetails = () => {
               <p>{product.descripcion}</p>
               <hr />
               <p id="vendedor">Vendido por: <strong>{product.vendedor}</strong></p>
-              <button id="btn_review" type="button" className="btn btn-primary mt-4" 
+              <button id="btn_review" type="button" className="btn btn-success mt-4" 
               data-toggle="modal" data-target="#ratingModal">Deja tu Opinion</button>
-              <div className="alert alert-danger mt-5" type="alert">Inicia Sesión para dejar tu review</div>
+              <div className="alert alert-success mt-5" type="alert">Inicia Sesión para dejar tu review</div>
           
               {/*Mensaje emergente para dejar opinion y calificacion*/}
               <div className="row mt-2 mb-5">

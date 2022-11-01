@@ -6,7 +6,7 @@ import Home from './componnents/Home';
 import { ProductDetails } from './componnents/products/ProductDetails';
 //Router traido desde react-router-dom (no confundir con el de express)
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import Cart from './componnents/cart/Cart';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
             <Route path="/" element={<Home />}/>
             <Route path="/Home" element={<Home />}/>
             <Route path="/producto/:id" element={<ProductDetails />}/>
+            <Route path="/carrito" element={<Cart />}/>
           </Routes>
         </div>
         <Footer />

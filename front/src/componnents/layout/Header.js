@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react'
 import "../../App.css"
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     
     return (
       <Fragment>
           <nav className='navbar row'>
-              <div className='col-12 col-md-3'>
+              <div className='col-10 col-md-3'>
                   <div className='navbar-brand'>
                       <img src="./images/BookStore.png" alt="Book Store Group Logo"></img>
                   </div>
@@ -22,29 +23,32 @@ const Header = () => {
                           <div class="input-group-append">
                               <button id="search-btn" class="btn">
                                   <i class="fa fa-search fa-2x text -white" aria-hidden="true"></i>
-                                  
-                                  </button>    
-                          </div>
-                  </div>
-              </div>
-              <div className="col-10 col-md-3 mt-4 mt-md-0 text-center">
-                  <button className="btn" id="login_btn">Iniciar Sesión</button><spam></spam>
-                  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-                  <i class="fa fa-shopping-cart fa-2x text-white" aria-hidden="false"></i>
-                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                  <span className="ml-1" id="cart_count">4</span>
-              </div>
-         </nav>
-         <navig class="navbar row text-center">
-         <a class="link_user col-12 col-md-2" href="local">Incio</a>
-         <a class="link_user col-12 col-md-2" href="local" >Courses</a>
-         <a class="link_user col-12 col-md-2" href="local" >Books</a>
-         <a class="link_user col-12 col-md-2" href="local" >Dictionary</a>
-         <a class="link_user col-12 col-md-2" href="local" >Conversation Class</a>
-         </navig>
+                              </button>    
+                              </div>
+                    </div>
+                </div>
+                <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
+                    <div className="ml-4 dropdown d-inline">
+                        <Link to="#!" className="btn dropdown-toggle text-white mr-4" type="button"
+                            id="dropDownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Contenido</span></Link>
+                        <div className='dropdown-menu' aria-labelledby='dropDownMenu'>
+                            <Link className="dropdown-item" to="/dashboard">Adm. Productos</Link>
+                            <Link className="dropdown-item" to="/">Ventas</Link>
+                            <Link className="dropdown-item" to="/">Mi cuenta</Link>
+                            <Link className="dropdown-item" to="/">Cerrar Sesion</Link>
+                        </div>
+                    </div>
+
+                    <Link to="/carrito"><i class="fa fa-shopping-cart fa-2x text-white" aria-hidden="false"></i>
+                    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        <span className="ml-1" id="cart_count">4</span></Link>
+                </div>
+
+            </nav>        
             
   
-        
+    
   
       </Fragment>
     )
