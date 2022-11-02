@@ -6,6 +6,9 @@ import Home from './componnents/Home';
 import { ProductDetails } from './componnents/products/ProductDetails';
 //Router traido desde react-router-dom (no confundir con el de express)
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './componnents/admin/Dashboard';
+import ProductsList from './componnents/admin/ProductsList';
+import NewProduct from './componnents/admin/newProduct';
 import Cart from './componnents/cart/Cart';
 
 function App() {
@@ -18,6 +21,9 @@ function App() {
             <Route path="/" element={<Home />}/>
             <Route path="/Home" element={<Home />}/>
             <Route path="/producto/:id" element={<ProductDetails />}/>
+            <Route path="/dashboard" element={<Dashboard />}/>
+            <Route path="/productList" element={<ProductsList />}/>
+            <Route path="/nuevoProducto" element={<NewProduct />}/>
             <Route path="/carrito" element={<Cart />}/>
           </Routes>
         </div>
