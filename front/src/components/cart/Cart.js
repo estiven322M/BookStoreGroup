@@ -118,7 +118,7 @@ cartItems = Array.from(cartItems);
                                 <p>Est. total: <span className="order-summary-values">$394.000</span></p>
 
                                 <hr />
-                                <button id="checkout_btn" className="btn btn-outline-success">Comprar!</button>
+                                <button id="checkout_btn" className="btn btn-outline-success"> Finalizar Compra</button>
                             </div>
                         </div>
                     </div>

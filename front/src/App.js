@@ -1,16 +1,16 @@
 import React from 'react';
 import './App.css';
-import Home from './componnents/Home';
-import { Footer } from './componnents/layout/Footer';
-import Header from './componnents/layout/Header';
-import { ProductDetails } from './componnents/products/ProductDetails';
+import Home from './components/Home';
+import { Footer } from './components/layout/Footer';
+import Header from './components/layout/Header';
+import { ProductDetails } from './components/products/ProductDetails';
 //Router traido desde react-router-dom (no confundir con el de express)
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Dashboard from './componnents/admin/Dashboard';
-import NewProduct from './componnents/admin/newProduct';
-import ProductsList from './componnents/admin/ProductsList';
-import Cart from './componnents/cart/Cart';
-import SalesList from './componnents/products/ProductSales';
+import Dashboard from './components/admin/Dashboard';
+import NewProduct from './components/admin/newProduct';
+import ProductsList from './components/admin/ProductsList';
+import Cart from './components/cart/Cart';
+import SalesList from './components/products/ProductSales';
 
 function App() {
   return (
