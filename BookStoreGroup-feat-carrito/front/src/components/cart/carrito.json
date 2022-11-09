@@ -1,0 +1,39 @@
+{
+    "item": [
+        {
+            "_id":"6355ef56aada91b38430015c",
+            "nombre":"BooK Learn B2",
+            "precio":92000,
+            "imagen":"./images/productos/B2.png",
+            "inventario":30,
+            "__v": 0
+        },       
+        {
+        
+            "_id":"6355efd4aada91b38430015f",
+            "nombre":"BooK Learn C1",
+            "precio":94000,
+            "imagen":"./images/productos/C1.png",
+            "inventario":50,
+            "__v": 0
+        },       
+        {
+        
+            "_id":"6355f008aada91b384300162",
+            "nombre":"BooK Learn C2",
+            "precio":96000,
+            "imagen":"./images/productos/C2.png",
+            "inventario":40,
+            "__v": 0
+        },       
+        {
+            "_id":"6355f233deca47cc45feea0e",
+            "nombre":"Cartilla Grafica",
+            "precio":99000,
+            "imagen":"./images/productos/Cartilla.png",
+            "inventario":50,
+            "__v": 0
+        
+        }
+   ]
+}   
