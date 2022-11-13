@@ -65,11 +65,11 @@ usuarioSchema.methods.getJwtToken=function(){
 }
 
 //Generar un Token para reset contraseña
-usuarioSchema.methods.genResetPasswordToken=async function (){
+usuarioSchema.methods.genResetPasswordToken= function (){
     const resetToken=crypto.randomBytes(20).toString('hex')
 
     //hashear y resetear token
-    this.resetPasswordToken=resetToken;
+    this.resetPasswordToken=crypto.createHash("sha256").update(resetToken).digest('hex')
 
     //setear fecha expiracion token
     this.resetPasswordExpire=Date.now()+30*60*1000//el token dura 30 minutos
