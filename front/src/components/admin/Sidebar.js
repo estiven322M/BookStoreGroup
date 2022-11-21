@@ -5,7 +5,7 @@ const Sidebar = () => {
     return (
         <div className="sidebar-wrapper">
             <nav id="sidebar">
-                <ul className="list-unstyled componnents">
+                <ul className="list-unstyled components">
                     <li>
                         <Link to="/Dashboard"><i className="fa fa-tachometer"></i> Administración</Link>
                     </li>
@@ -25,7 +25,7 @@ const Sidebar = () => {
                     </li>
 
                     <li>
-                        <Link to="/admin/orders"><i className="fa fa-shopping-basket"></i> Pedidos</Link>
+                        <Link to="/orderList"><i className="fa fa-shopping-basket"></i> Pedidos</Link>
                     </li>
 
                     <li>
@@ -43,4 +43,3 @@ const Sidebar = () => {
 }
 
 export default Sidebar
-

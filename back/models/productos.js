@@ -46,12 +46,12 @@ const productosSchema=mongoose.Schema({
                 "Book Learn C2",
                 "Cartilla Grafica",
                 "Diccionary",
-                "Wordbook A1",
-                "wordbook A2",
-                "wordbook B1",
-                "wordbook B2",
-                "wordbook C2",
-                "wordbook C2",
+                "WorKbook A1",
+                "WorKbook A2",
+                "WorKbook B1",
+                "WorKbook B2",
+                "WorKbook C1",
+                "WorKbook C2",
                 
             ]
         }
@@ -86,12 +86,19 @@ const productosSchema=mongoose.Schema({
             }
         }
     ],
+    user:{
+        type: mongoose.Schema.ObjectId,
+        ref: 'User',
+        required: true
+    },
+
     fechaCreacion:{
         type:Date,
         default:Date.now
     }
 
 })
+
 
 module.exports=mongoose.model("productos",productosSchema)
 

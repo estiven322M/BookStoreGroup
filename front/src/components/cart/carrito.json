@@ -1,7 +1,7 @@
 {
     "item": [
         {
-            "_id":"6355ef56aada91b38430015c",
+            "_id":"636711b65cfe754299e34735",
             "nombre":"BooK Learn B2",
             "precio":92000,
             "imagen":"./images/productos/B2.png",
@@ -10,7 +10,7 @@
         },       
         {
         
-            "_id":"6355efd4aada91b38430015f",
+            "_id":"636711f81fe4f3947db796e3",
             "nombre":"BooK Learn C1",
             "precio":94000,
             "imagen":"./images/productos/C1.png",
@@ -19,7 +19,7 @@
         },       
         {
         
-            "_id":"6355f008aada91b384300162",
+            "_id":"63671249c0e4787943b0a781",
             "nombre":"BooK Learn C2",
             "precio":96000,
             "imagen":"./images/productos/C2.png",
