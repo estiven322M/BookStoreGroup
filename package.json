@@ -3,9 +3,7 @@
     "version": "1.0.0",
     "description": "Tienda virtual de libros y guias de Ingles para todo publico.",
     "main": "server.js",
-     "engines": {
-         "node": "18.x"
-  },
+   
     "scripts": {
         "start": "node back/server.js",
         "dev": "set NODE_ENV=DEVELOPMENT& nodemon back/server",
