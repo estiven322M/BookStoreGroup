@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "Tienda virtual de libros y guias de Ingles para todo publico.",
     "main": "server.js",
+    "engines": {
+        "node": "16.18.0"
+  },
    
    
     "scripts": {
